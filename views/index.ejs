@@ -1,0 +1,11 @@
+<%- include("partials/header.ejs") %>
+
+<ul>
+  <% articles.forEach(article => { %>
+    <li>
+      <a href="/article/<%= article.id %>"><%= article.judul %></a>
+    </li>
+  <% }); %>
+</ul>
+
+<%- include("partials/footer.ejs") %>

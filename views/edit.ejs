@@ -1,0 +1,13 @@
+<%- include("partials/header.ejs") %>
+
+<form action="/articles/<%= article.id %>/edit" method="POST">
+    <label for="judul">Judul Artikel:</label><br>
+    <input type="text" id="judul" name="judul" value="<%= article.judul %>"><br><br>
+  
+    <label for="konten">Isi Artikel:</label><br>
+    <textarea id="konten" name="konten" rows="10" cols="60"><%= article.konten %></textarea><br><br>
+  
+    <input type="submit" value="Submit">
+</form>
+
+<%- include("partials/footer.ejs") %>
